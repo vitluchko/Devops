@@ -1,20 +1,20 @@
 # Lines starting with '#' are comments.
 
 # Assign a team to review all files in the 'backend' directory.
-/backend/ @backend-team
+# /backend/ @backend-team
 
 # Assign a specific user to review a single file.
-/docs/user-guide.md @alice
+# /docs/user-guide.md @alice
 
 # Assign multiple users to review files in a directory.
-/frontend/ @frontend-team @bob @carol
+# /frontend/ @frontend-team @bob @carol
 
 # Assign a team as reviewers for all Markdown files.
-*.md @documentation-team
+# *.md @documentation-team
 
 # Use '!' to exclude certain files or directories.
 # For example, exclude the 'tests' directory from code owners.
-/tests/ !@
+# /tests/ !@
 
 # Assign a default code owner for files that don't match any specific pattern.
 * @vitluchko
