@@ -17,4 +17,4 @@
 # /tests/ !@
 
 # Assign a default code owner for files that don't match any specific pattern.
-* @vitluchko
+/main/ @vitluchko
