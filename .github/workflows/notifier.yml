@@ -7,15 +7,18 @@ on:
     branches: [ main ]
 
 jobs:
-
   notifyTelegram:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
     - name: send custom message
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          The ${{ github.event_name }} event triggered final step.
-          echo This event is a pull request that had an assignee removed.
+          The ${{ github.event_name }} event triggered the final step.
+          This event is a ${{ github.event_name }} by ${{ github.actor }}.
+          Time: ${{ github.event.timestamp }} 
