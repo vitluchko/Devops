@@ -13,6 +13,10 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
 
+    - name: Get current time
+      id: time
+      run: echo "::set-output name=time::$(date +'%Y-%m-%d %H:%M:%S %Z')"
+
     - name: send custom message
       uses: appleboy/telegram-action@master
       with:
@@ -21,4 +25,4 @@ jobs:
         message: |
           The ${{ github.event_name }} event triggered the final step.
           This event is a ${{ github.event_name }} by ${{ github.actor }}.
-          Time: ${{ github.event.timestamp }} 
+          Time: ${{ steps.time.outputs.time }}
