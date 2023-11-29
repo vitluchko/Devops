@@ -22,14 +22,14 @@ Before getting started, make sure you have the following dependencies installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/vitluchko/Devops.git
+    cd Devops
     ```
 
 2. Change the script permissions:
 
     ```bash
-    chmod +x check_log_changes.sh
+    chmod +x redis.sh
     ```
 
 3. Add a cron task:
