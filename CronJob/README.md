@@ -43,6 +43,9 @@ Before getting started, make sure you have the following dependencies installed:
     ```bash
     */2 * * * * /full/path/to/redis.sh
     ```
+    
+    ![image](https://github.com/vitluchko/Devops/assets/98816838/b6142a2a-5432-45dd-94b8-6edc2d6a4377)
+
 
 4. Save and close the editor.
 
