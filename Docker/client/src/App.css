@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #232f3e;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Styles for MainComponent and OtherPage components can be added here */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+}
