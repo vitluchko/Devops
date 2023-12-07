@@ -1,3 +1,0 @@
-[submodule "Docker/client"]
-	path = Docker/client
-	url = https://github.com/sponsors/ljharb
